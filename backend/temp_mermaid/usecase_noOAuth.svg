@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="780" xmlns="http://www.w3.org/2000/svg" font-family="Times New Roman, serif">
+
+  <!-- Background -->
+  <rect width="900" height="780" fill="white"/>
+
+  <!-- Title -->
+  <text x="450" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">Sơ Đồ Use Case – Hệ Thống Cổng Thông Tin Tin Tức</text>
+
+  <!-- System boundary -->
+  <rect x="190" y="60" width="560" height="680" rx="8" ry="8"
+        fill="#EEF4FB" stroke="#5B8DD9" stroke-width="2"/>
+  <text x="450" y="84" text-anchor="middle" font-size="13" font-style="italic" fill="#333">«System»</text>
+  <text x="450" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#1F4E79">VDKP News Portal</text>
+
+  <!-- ═══ GROUP: Xác thực ═══ -->
+  <rect x="205" y="112" width="195" height="168" rx="6" fill="#D6E4F0" stroke="#5B8DD9" stroke-width="1.2"/>
+  <text x="302" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Xác thực</text>
+  <!-- Đăng ký -->
+  <ellipse cx="302" cy="158" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="163" text-anchor="middle" font-size="12" fill="#1a1a1a">Đăng ký</text>
+  <!-- Đăng nhập -->
+  <ellipse cx="302" cy="207" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="212" text-anchor="middle" font-size="12" fill="#1a1a1a">Đăng nhập</text>
+  <!-- Đăng nhập OAuth -->
+  <ellipse cx="302" cy="256" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="261" text-anchor="middle" font-size="12" fill="#1a1a1a">Đăng nhập OAuth</text>
+
+  <!-- ═══ Đăng nhập JWT (shared) ═══ -->
+  <ellipse cx="530" cy="207" rx="80" ry="22" fill="#D5F5E3" stroke="#27AE60" stroke-width="1.2"/>
+  <text x="530" y="212" text-anchor="middle" font-size="12" fill="#1a1a1a">Đăng nhập (JWT)</text>
+  <!-- include arrows -->
+  <line x1="374" y1="207" x2="450" y2="207" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="412" y="200" text-anchor="middle" font-size="10" fill="#555">«include»</text>
+  <line x1="374" y1="256" x2="506" y2="220" stroke="#555" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+
+  <!-- ═══ GROUP: Đọc tin ═══ -->
+  <rect x="205" y="298" width="195" height="180" rx="6" fill="#D6E4F0" stroke="#5B8DD9" stroke-width="1.2"/>
+  <text x="302" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Đọc tin</text>
+  <ellipse cx="302" cy="344" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="349" text-anchor="middle" font-size="12" fill="#1a1a1a">Xem trang chủ</text>
+  <ellipse cx="302" cy="393" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="398" text-anchor="middle" font-size="12" fill="#1a1a1a">Xem theo chuyên mục</text>
+  <ellipse cx="302" cy="441" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="446" text-anchor="middle" font-size="12" fill="#1a1a1a">Đọc bài viết</text>
+  <ellipse cx="302" cy="462" rx="72" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="302" y="467" text-anchor="middle" font-size="12" fill="#1a1a1a">Tìm kiếm</text>
+
+  <!-- ═══ GROUP: Tương tác ═══ -->
+  <rect x="400" y="298" width="200" height="390" rx="6" fill="#D6E4F0" stroke="#5B8DD9" stroke-width="1.2"/>
+  <text x="500" y="318" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Tương tác</text>
+  <ellipse cx="500" cy="344" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="349" text-anchor="middle" font-size="12" fill="#1a1a1a">Bình luận &amp; Reply</text>
+  <ellipse cx="500" cy="393" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="398" text-anchor="middle" font-size="12" fill="#1a1a1a">Like bình luận</text>
+  <ellipse cx="500" cy="441" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="446" text-anchor="middle" font-size="12" fill="#1a1a1a">Đánh giá sao</text>
+  <ellipse cx="500" cy="490" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="495" text-anchor="middle" font-size="12" fill="#1a1a1a">Bookmark bài viết</text>
+  <ellipse cx="500" cy="538" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="543" text-anchor="middle" font-size="12" fill="#1a1a1a">Xem lịch sử đọc</text>
+  <ellipse cx="500" cy="586" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="591" text-anchor="middle" font-size="12" fill="#1a1a1a">Nhận thông báo</text>
+  <ellipse cx="500" cy="634" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="639" text-anchor="middle" font-size="12" fill="#1a1a1a">Báo cáo bình luận</text>
+  <ellipse cx="500" cy="668" rx="80" ry="20" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="500" y="673" text-anchor="middle" font-size="12" fill="#1a1a1a">Chia sẻ bài viết</text>
+
+  <!-- ═══ GROUP: Quản trị ═══ -->
+  <rect x="615" y="112" width="122" height="290" rx="6" fill="#D6E4F0" stroke="#5B8DD9" stroke-width="1.2"/>
+  <text x="676" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Quản trị</text>
+  <ellipse cx="676" cy="162" rx="55" ry="18" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="676" y="167" text-anchor="middle" font-size="11" fill="#1a1a1a">Tạo/Sửa/Xóa bài viết</text>
+  <ellipse cx="676" cy="210" rx="55" ry="18" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="676" y="215" text-anchor="middle" font-size="11" fill="#1a1a1a">Quản lý chuyên mục</text>
+  <ellipse cx="676" cy="258" rx="55" ry="18" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="676" y="263" text-anchor="middle" font-size="11" fill="#1a1a1a">Quản lý người dùng</text>
+  <ellipse cx="676" cy="306" rx="55" ry="18" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="676" y="311" text-anchor="middle" font-size="11" fill="#1a1a1a">Xóa bình luận</text>
+  <ellipse cx="676" cy="354" rx="55" ry="18" fill="#AED6F1" stroke="#2E86C1" stroke-width="1.2"/>
+  <text x="676" y="359" text-anchor="middle" font-size="11" fill="#1a1a1a">Xem thống kê</text>
+
+  <!-- ═══ ACTORS ═══ -->
+  <!-- Khách (Guest) – left top -->
+  <g transform="translate(80,200)">
+    <circle cx="0" cy="-28" r="14" fill="#5B8DD9" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="0" y1="-14" x2="0" y2="20" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="-16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <text x="0" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Khách</text>
+    <text x="0" y="85" text-anchor="middle" font-size="12" fill="#555">(Guest)</text>
+  </g>
+
+  <!-- Người dùng (User) – left bottom -->
+  <g transform="translate(80,520)">
+    <circle cx="0" cy="-28" r="14" fill="#5B8DD9" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="0" y1="-14" x2="0" y2="20" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="-16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <text x="0" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Người dùng</text>
+    <text x="0" y="85" text-anchor="middle" font-size="12" fill="#555">(User)</text>
+  </g>
+
+  <!-- Admin – right -->
+  <g transform="translate(820,270)">
+    <circle cx="0" cy="-28" r="14" fill="#5B8DD9" stroke="#1F4E79" stroke-width="1.5"/>
+    <line x1="0" y1="-14" x2="0" y2="20" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="-16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <line x1="0" y1="20" x2="16" y2="48" stroke="#1F4E79" stroke-width="2"/>
+    <text x="0" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#1a1a1a">Admin</text>
+  </g>
+
+  <!-- ═══ ASSOCIATION LINES ═══ -->
+  <!-- Khách → Xác thực group -->
+  <line x1="110" y1="198" x2="205" y2="190" stroke="#333" stroke-width="1.2"/>
+  <!-- Khách → Đọc tin group -->
+  <line x1="110" y1="215" x2="205" y2="350" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Người dùng → Xác thực -->
+  <line x1="110" y1="508" x2="230" y2="280" stroke="#333" stroke-width="1.2"/>
+  <!-- Người dùng → Đọc tin -->
+  <line x1="110" y1="516" x2="205" y2="450" stroke="#333" stroke-width="1.2"/>
+  <!-- Người dùng → Tương tác -->
+  <line x1="110" y1="524" x2="400" y2="500" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Admin → Quản trị -->
+  <line x1="805" y1="260" x2="737" y2="230" stroke="#333" stroke-width="1.2"/>
+  <line x1="805" y1="268" x2="737" y2="268" stroke="#333" stroke-width="1.2"/>
+  <line x1="805" y1="276" x2="737" y2="306" stroke="#333" stroke-width="1.2"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8" fill="none" stroke="#555" stroke-width="1.2"/>
+    </marker>
+  </defs>
+
+</svg>
